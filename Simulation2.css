@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: border-box;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("abstract.jpg");
+  background-color: #A7CFE6;
+  /* opacity: .3; */
+   background-size: cover;
+   overflow-x: hidden;
+   /* overflow-y: hidden; */
+}
+
+nav{
+ background-color: #102837;
+ /* #89cff0; */
+ display: flex;
+ border: 2px solid white ;
+ border-radius: 35px;
+  height: 80px;
+  width: 100%
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 180px;
+  font-weight: bold;
+}
+ul{
+  float:right;
+  margin-right: 40px;
+
+}
+ul li{
+  display:inline-block;
+  margin: 0 5px;
+}
+
+ul li a{
+  color: white;
+  line-height: 80px;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  background-color: #102837 ;
+  border: 2px solid white ;
+  border-radius: 25px;
+  color: white;
+  transition: 0.5
+}
+@media(max-width:768px){
+  .image-container{
+    opacity: 50%;
+
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(80px);
+  }
+    .list{
+      background-color: black;
+      text-align:center;
+      animation: list 2s ease-out;
+    }
+    body{
+      background-size: auto;
+    }
+
+@keyframes list {
+  0%{
+    opacity: 0;
+    right: -100px;
+  }
+  50%{
+  opacity 0;
+  transform: translateX(100px);
+}
+  100%{
+  opacity: 1;
+      }
+}
+
+}
+
+.inputnames{
+  color: blue;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:160px;
+  left:0px;
+
+}
+ul li h1{
+  color: #102837;
+  font-size: 20px;
+  border: 2px solid #00 ;
+  /* border-radius: 35px; */
+  /* border-style: ridge; */
+  height: 40px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+.EMF{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.inputvalues{
+  color: blue;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left:240px;
+
+}
+form input {
+  background-color: transparent;
+  color: #102837;
+  font-size: 20px;
+  border: 2px solid #00 ;
+  border-radius: 35px;
+  border-style: ridge;
+  height: 40px;
+  width: 190px;
+  margin-bottom: 10px;
+  text-align:center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+
+.input {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #102837;
+  position: absolute;
+  left: 20px;
+  top:110px;
+}
+.-- {
+  position: absolute;
+  left: 90px;
+  top:490px;
+  border: 2px solid #00 ;
+  width: 940px;
+
+
+}
+.output {
+  font-size: 20px;
+  font-weight: bolder;
+  color:  #102837;
+  border: 2px solid #00 ;
+  position: absolute;
+  width: 240px;
+  left: 20px;
+  top:500px;
+}
+.outputnames{
+  color: blue;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:550px;
+  left:0px;
+
+}
+ul li h3{
+  color: #102837;
+  font-size: 20px;
+  border: 2px solid #00 ;
+  /* border-radius: 35px; */
+  /* border-style: ridge; */
+  height: 40px;
+  width: 200px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+
+.outputvalues{
+  color: blue;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:550px;
+  left:240px;
+
+}
+button {
+  background-color: transparent;
+   color: #102837;
+  font-size:12px;
+  border: 2px solid #00 ;
+  border-radius: 35px;
+  border-style: ridge;
+  height: 40px;
+  width: 130px;
+  margin-bottom: 10px;
+  text-align:center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+ #Torque:hover, #Restoringforce:hover, #Angularvelocity:hover, #Gearingupfactor:hover, #Voltageoutput:hover, #Amperoutput:hover, #Power:hover, #Systemeffeciency:hover {
+  background-color: #D9DBFE;
+
+}
+.Simulation {
+  position: absolute;
+  right:20px;
+  top: 150px;
+  height: 500px;
+  width: auto;
+}

@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Simulation.css">
+</head>
+<body>
+  <!-- <script type="module">
+
+
+    import * as THREE from 'https://unpkg.com/three@0.135.0/build/three.module.js';
+
+    const scene = new THREE.Scene();
+
+  </script> -->
+
+  <script>
+  var loadForce = document.getElementById('load'),
+  results =
+  </script>
+
+    <nav>
+        <label class="logo">Butterfly Effect</label>
+        <ul class="list">
+          <li> <a  href="About.html">About</a> </li>
+          <li> <a href="Analysis.html">Analysis</a> </li>
+          <li> <a class="active" href="Simulation.html">Simulation</a> </li>
+          <li> <a href="https://thingspeak.com/channels/1613328">Connect</a> </li>
+        </ul>
+
+    </nav>
+    <div>
+      <img class="Simulation" src="Project Name (2).png">
+    </div>
+      <ul class="inputnames">
+        <li > <h1> load force </h1> </li>
+        <li > <h1> delta X of spring </h1>  </li>
+        <li> <h1> spring constant </h1>  </li>
+        <li > <h1> Gears number </h1>  </li>
+        <li > <h1> Gears teeth number </h1>  </li>
+        <li > <h1 class="EMF">  Max generator EMF</h1>  </li>
+      </ul>
+    </div>
+    <div class="input"> Enter System Inputs <div>
+      <form action="" class="inputvalues">
+        <input type="number" id="load" name="loadForce" placeholder=" Enter value " onchange="func1">
+        <input type="number" id="xspring" name="xspring" placeholder=" Enter value ">
+        <input type="number" id="constspring" name="constspring" placeholder=" Enter value ">
+        <input type="number" id="gears" name="gears" placeholder=" Enter value ">
+        <input type="number" id="gearsth" name="gearstheeth" placeholder=" Enter value ">
+        <input type="number" id="EMF" name="EMF" placeholder=" Enter value ">
+    </form>
+    </div>
+    <script>
+    function func1() {
+      var x=document,getElementById('load').value;
+      res= x+2;
+    }
+    </script>
+    <div class="output"> Get System Outputs </div>
+    <div>
+      <ul class="outputnames">
+        <li > <h3> Torque </h3> </li>
+        <li > <h3>  Restoring force </h3> </li>
+        <li > <h3> Angular velocity </h3> </li>
+        <li > <h3> Gearing up factor </h3> </li>
+        <li > <h3> Voltage output </h3> </li>
+        <li > <h3> Amper output </h3> </li>
+        <li > <h3> Power </h3> </li>
+          <li > <h3> System effeciency  </h3> </li>
+      </ul>
+    </div>
+    <div class="outputvalues">
+        <button id="Torque"> Your result will apper here </button>
+        <button id="Restoringforce">Your result will apper here </button>
+        <button id="Angularvelocity"> Your result will apper here </button>
+        <button id="Gearingupfactor"> Your result will apper here </button>
+        <button id="Voltageoutput"> Your result will apper here </button>
+        <button id="Amperoutput"> Your result will apper here </button>
+        <button id="Power"> Your result will apper here </button>
+        <button id="Systemeffeciency"> Your result will apper here </button>
+  </div>
+
+    </div>
+    <div class="--">
+      <button id="submit"> submit </button>
+       </div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Analysis.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">Butterfly Effect</label>
+        <ul class="list">
+          <li> <a href="About.html">About</a> </li>
+          <li> <a class="active" href="Analysis.html">Analysis</a> </li>
+          <li> <a href="Simulation.html">Simulation</a> </li>
+          <li> <a href="https://thingspeak.com/channels/1613328">Connect</a> </li>
+        </ul>
+    </nav>
+    <div>
+      <img class="Simulation" src="1.jpg">
+      <img class="E13" src="13.png">
+      <img class="E14" src="14.jpg">
+      <img class="E15" src="15.jpg">
+      <img class="E16" src="16.jpg">
+    </div>
+    <div   class="analysis">
+
+      <h2> Non-renewable energy comes from sources that will run out or will not be
+replenished in our lifetimes—or even in many, many lifetimes.
+However, energy storage in elastic deformations in the mechanical domain offers
+an alternative. This available amount of stored energy may be delivered not only to
+mechanical loads, but also to systems that convert it to drive an electrical load.
+This solution harvests the force trains and subways exert on the railways, redesign
+a new rail system, utilizing springs to move back and forth delivering motion to a
+gear system.
+</h2>
+<br>
+<h3>
+Accordingly, the prototype consists of:
+</h3>
+<h6>
+  (As shown in the 3d Simulation figure (1))
+</h6>
+<br>
+<h5>
+- A Combination of springs to move up and down.
+</h5>
+<br>
+<h5>
+- Attached rack between the surface and the pinion.
+</h5>
+<br>
+<h5>
+  - A gear train to gear up the speed.
+</h5>
+<br>
+<h5>
+- A DC generator attached to the smallest gear.</h5>
+<br>
+<h5> - A stepper motor (Working as generator) for comparison purpose.</h5>
+<br>
+<h3> The following are the scientific base and rules that govern the motion of this
+dynamic system:
+</h3>
+<br>
+<h4>
+First: The springs
+</h4>
+<br>
+<h1>
+As spring scales obey Hooke's law,
+ 𝐹𝑠 = -kX (1)
+</h1>
+<br>
+<h1>
+Where,
+𝐹𝑠 = restoring spring force
+</h1>
+<br>
+<h1>
+K = Hooke’s constant
+</h1>
+<br>
+<h1>
+X = Displacement
+</h1>
+<br>
+<h1>
+
+, the stiffer the object, the smaller the displacement it can tolerate before the elastic
+limit is reached.
+</h1>
+<br>
+<h1>
+Accordingly, The Force of the load should overcome the
+restoring force as shown in figure(2):
+</h1>
+<br>
+<h1>
+(Note: neglecting the friction force 𝐹𝑟
+)
+</h1>
+<br>
+<h1>
+ m 𝑥̈= F(t) − 𝐹𝑠
+ (2)
+</h1>
+<br>
+<h1>
+m 𝑥̈= 𝐹𝑛𝑒𝑡 (Net force)
+</h1>
+<br>
+<h1>
+F(t) = The force the load exerts
+</h1>
+<br>
+<h4>
+Second: The gear system
+</h4>
+<br>
+<h1>
+The gears behave as non-concurrent force systems. Applying force to one gear
+transmits it in the gear train and get a torque in the other end.
+</h1>
+<br>
+<h1>
+The model gear train goes as shown in figure (3):
+</h1>
+<br>
+<h5>
+- The driver gear with its 90 teeth.
+</h5>
+<br>
+<h5>
+- 2 gears are fully attached together as a
+compound gear, they turn at same speed
+and same torque magnitude.
+</h5>
+<br>
+<h1>
+(Both gears have 45 teeth)
+</h1>
+<br>
+<h5>
+- The driven gear attached to the generator axis with 23 teeth.
+</h5>
+<br>
+<h5>
+The gears were designed as compatible gear teeth in order to mate perfectly.
+</h1>
+<br>
+<h1>
+The main equation governing the driver gear (gear A) and so as the remaining 3
+gears is as follows: (As shown in figure (4))
+</h1>
+<br>
+<h1>
+
+ 𝐽𝐴ω̇ 𝑎= 𝐽𝐴𝑥̈/ 𝑅𝑎 (3)
+</h1>
+<br>
+<h1>
+Where,
+</h1>
+<br>
+<h1>
+ 𝐽𝐴 = moment of inertia (of gear A)
+</h1>
+<br>
+<h1>
+ 𝑥̈ = Linear Acceleration 𝑥̇ = Linear velocity
+</h1>
+<br>
+<h1>
+ω̇ 𝑎= Angular acceleration ω𝑎= Angular velocity
+</h1>
+<br>
+<h1>
+𝑅𝑎 = Radius of the gear
+</h1>
+<br>
+<h1>
+Since the instantiations linear velocity at the point of contact or “mating” is the
+same; the ratio could be obtained:
+</h1>
+<br>
+<h1>
+
+ω1
+ω2
+= -
+𝑅2
+𝑅1
+= -
+𝑁2
+𝑁1
+ (4)
+Where, N = number of teeth
+Therefore, increasing the number of teeth decreases the angular velocity.
+In this model, the ratio between gear’s D angular velocity and gear A is obtained
+by:
+
+ω𝑑
+ω𝑎
+= -
+𝑁𝑎
+𝑁𝑏
+x -
+𝑁𝑐
+𝑁𝑑
+ (5)
+That indicates:
+
+ω𝑑𝑟𝑖𝑣𝑒𝑛
+ω𝑑𝑟𝑖𝑣𝑒𝑟
+= -
+90
+45
+x -
+45
+23
+= 3.91 ≈ 4
+</h1>
+<br>
+<h1>
+(Gearing up by the factor of 4 in the same direction of the driver gear)
+</h1>
+<br>
+<h1>
+While doing the test of the prototype, the Driver gear made half revolution per
+second, so the driven gear on the generator is moving with (2 RPS)
+</h1>
+<br>
+<h1>
+(0.5 x 4 = 2 revolutions per second)
+</h1>
+<br>
+<h4>
+Third: The generator
+</h4>
+<br>
+<h1>
+The angular velocity determines the voltage output of the generator as follows:
+</h1>
+<br>
+<h1>
+ 𝐸𝑀𝐹𝑜𝑢𝑡 = 𝐸𝑀𝐹𝑚𝑎𝑥 sin ( ωt) (6)
+Where,
+</h1>
+<br>
+<h1>
+𝐸𝑀𝐹𝑜𝑢𝑡 = Theoretical output of voltage
+</h1>
+<br>
+<h1>
+𝐸𝑀𝐹𝑚𝑎𝑥 = maximum emf by the generator
+t = time
+
+</h1>
+<br>
+<h1>
+ 𝐸𝑀𝐹𝑔 = 𝐾𝑡 ω𝑔 (7)
+</h1>
+<br>
+<h1>
+Where,
+𝐸𝑀𝐹𝑔 = the back emf of the generator
+</h1>
+<br>
+<h1>
+𝐾𝑡 = the back emf (torque) constant
+</h1>
+<br>
+<h1>
+Therefore,
+The actual output is the difference between them.
+Putting it all together (As shown in figure (5)),
+The gear system provided its productivity over the
+stepper system with only one rotating pinion; as the
+stepper generated 0.1 mA and 0.7 V.
+</h1>
+<br>
+<h1>
+As ΔX correlates to the gear circumference, a half
+rotation was established back and forth as the
+springs go up and down.
+</h1>
+<br>
+<h1>
+Based on the results of the test on both the gear train unit and the stepper unit, the
+specified design requirements were met:
+</h1>
+<br>
+<h3>
+1- Ensuring maintenance and consistency
+</h3>
+<br>
+<h5>
+- the prototype was tested by a skateboard to resemble the train.
+</h5>
+<br>
+<h5>
+- Low angle of elevation was established (15 degrees).
+</h5>
+<br>
+<h5>
+- The highest point of hypotenuse was achieved by increasing the distance of
+the adjacent side (the rail line).
+</h5>
+<br>
+<h3>
+2- Power output
+</h3>
+<br>
+<h5>
+In a system that is not supposed to serve as a power generation system, it served
+as a huge power supply alternative as follows:
+</h5>
+<br>
+<h5>
+- Power generated = Voltage* Current
+</h5>
+<br>
+<h5>
+- The maximum output voltage = 3.2 volt
+</h5>
+<br>
+<h5>
+- The maximum current = 11.8 milliAmp
+</h5>
+<br>
+
+<h5>
+- Therefore, the maximum power = 37.76 milliwatt per unit
+</h5>
+<br>
+<h5>
+- Now the math is applied, and each unit production of the spring system is
+amplified by the number of wheels and the repetitive amounts they press on
+the rails.
+</h5>
+<br>
+<h5>
+- Considering the number of units and the number of pressing wheels
+(2 units in each double rail * 10 carriages * 4 wheels in each carriage)
+Then only this scale can generate up to 3 watts (3.021 watts).
+</h5>
+<br>
+<h5>
+(The average value is about 1.8072 watts)
+</h5>
+<br>
+<h3>
+3- Applicability on large scale
+</h3>
+<br>
+<h5>
+- On a large scale the project could generate up to 3 megawatts per train.
+</h5>
+<br>
+<h5>
+- The number of passing trains on a certain point a day assumingly (24
+assuming train every hour) then a station can generate 72 megawatts a day.
+</h5>
+<br>
+<h5>
+- From a system with power consumption to a system of power generation!
+</h5>
+<br>
+<h5>
+    </div>
+<h7 class="Simulat">
+figure (1)
+</h7>
+<h7 class="E130">
+figure (2)
+</h7>
+<h7 class="E140">
+figure (3)
+</h7>
+<h7 class="E150">
+figure (4)
+</h7>
+<h7 class="E160">
+figure (5)
+</h7>
+<div class="iiii">
+<h8 > <a href="Simulation.html">Continue to Simulation</a> </h8>
+</div>
+</body>
+</html>

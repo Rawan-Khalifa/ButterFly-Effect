@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: border-box;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("abstract.jpg");
+  background-color: #A7CFE6;
+   background-size: cover;
+   overflow-x: hidden;
+}
+
+nav{
+ background-color: #102837;
+  display: flex;
+ border: 2px solid white ;
+ border-radius: 35px;
+  height: 80px;
+  width: 100%
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 180px;
+  font-weight: bold;
+}
+ul{
+  float:right;
+  margin-right: 40px;
+
+}
+ul li{
+  display:inline-block;
+  margin: 0 5px;
+}
+
+ul li a{
+  color: white;
+  line-height: 80px;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  background-color: #102837 ;
+  border: 2px solid white ;
+  border-radius: 25px;
+  color: white;
+  transition: 0.5
+}
+@media(max-width:768px){
+  .image-container{
+    opacity: 50%;
+
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(80px);
+  }
+    .list{
+      background-color: black;
+      text-align:center;
+      animation: list 2s ease-out;
+    }
+    body{
+      background-size: auto;
+    }
+
+@keyframes list {
+  0%{
+    opacity: 0;
+    right: -100px;
+  }
+  50%{
+  opacity 0;
+  transform: translateX(100px);
+}
+  100%{
+  opacity: 1;
+      }
+}
+
+}
+
+.inputvalues{
+  color: blue;
+  font-size: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left:240px;
+
+}
+.Simulation{
+  overflow-y: hidden;
+}
+div input {
+  background-color: transparent;
+  color: #102837;
+  font-size: 12px;
+  border: 2px solid #00 ;
+  border-radius: 35px;
+  border-style: ridge;
+  height: 25px;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  text-align:center;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+div label {
+  font-weight: bolder;
+  font-size: 18;
+  position: absolute;
+  top: -40px;
+  text-shadow: 10px 6px 5px lightblue;
+  font-family: Apple Chancery, cursive;
+  color: #1C2063;
+
+}
+.input {
+  position: absolute;
+  left: 10px;
+  top:130px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.input2 {
+  position: absolute;
+  right: 10px;
+  top:130px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.input3 {
+  position: absolute;
+  left: 10px;
+  top:340px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:305px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.input4 {
+  position: absolute;
+  right: 10px;
+  top:340px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.input5 {
+  position: absolute;
+  left: 10px;
+  top:690px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.input6 {
+  position: absolute;
+  right: 10px;
+  top:580px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:255px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+
+}
+.input7 {
+  position: absolute;
+  left: 10px;
+  top:900px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+
+}
+.input8 {
+  position: absolute;
+  right: 10px;
+  top:880px;
+  border-width: medium;
+  border: 2px solid gray ;
+  border-style: solid;
+  border-radius: 40px;
+  height:165px;
+  width: 360px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  background-image: url("blue22.jpg");
+  background-size: cover;
+  /* background: rgba(245, 235, 184, 0.4); */
+  box-shadow: 5px 8px 3px gray;
+  color: #0C0A3D;
+
+}
+.equal{
+  position: absolute;
+  left: -190px;
+  top: -3px;
+  text-align:center;
+  font-weight: bolder;
+  width: 30px;
+  height: 25px;
+
+}
+
+#Restoring, #Fnet, #Angular, #output, #acceleration, #voltage ,#current, #Power{
+  background-color: transparent;
+  color: #102837;
+  font-size: 10px;
+  border: 2px solid #00 ;
+  border-radius: 35px;
+  border-style: ridge;
+  height: 25px;
+  width: 60px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  text-align:center;
+  text-decoration-color: black;
+  padding-left: 7px;
+  padding-right: 7px;
+  position: absolute;
+  bottom: 10px;
+}
+h4{
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+div h8 a{
+  color: #1C2063;
+}
+
+.iiii{
+  position: absolute;
+  top:1100px;
+  font-weight: bolder;
+  font-size: 18;
+  text-shadow: 10px 6px 5px lightblue;
+  font-family: Apple Chancery, cursive;
+  color: #1C2063;
+  padding-bottom: 30px;
+}

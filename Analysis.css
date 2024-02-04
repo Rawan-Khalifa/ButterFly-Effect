@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: border-box;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("abstract.jpg");
+  background-color: #A7CFE6;
+  /* opacity: .3; */
+   background-size: cover;
+    overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+nav{
+ background-color: #102837;
+ /* #89cff0; */
+ display: flex;
+ border: 2px solid white ;
+ border-radius: 35px;
+  height: 80px;
+  width: 100%
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 180px;
+  font-weight: bold;
+}
+ul{
+  float:right;
+  margin-right: 40px;
+
+}
+ul li{
+  display:inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  background-color: #102837 ;
+  border: 2px solid white ;
+  border-radius: 25px;
+  color: white;
+  transition: 0.5
+}
+
+.analysis{
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+h1{
+  font-size: 20px;
+  font-style: normal;
+  font-family:Arial Narrow, sans-serif;
+  font-weight: lighter;
+}
+h2{
+  font-size: 22px;
+  flex: auto;
+  font-family:Arial Narrow, sans-serif;
+  font-weight: normal;
+
+}
+h3{
+  font-size: 22px;
+  flex: auto;
+  font-family:Arial Narrow, sans-serif;
+  font-weight: bold;
+}
+ h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h5{
+  font-size: 20px;
+  flex: auto;
+  font-family:Arial Narrow, sans-serif;
+  font-weight: lighter;;}
+
+h6{
+  font-size: 20px;
+font-weight: lighter;;}
+
+.Simulation {
+  position: absolute;
+  right:-120px;
+  top: 110px;
+  height: 500px;
+  width: auto;
+}
+.Simulat{
+  position: absolute;
+  right: 20px;
+  top: 480px;
+  width: auto;
+}
+.E13{
+  position: absolute;
+  right:20px;
+  top: 710px;
+  /* height: 500px; */
+  width: auto;
+}
+.E130{
+  position: absolute;
+  right:20px;
+  top: 690px;
+  /* height: 500px; */
+  width: auto;
+}
+.E14{
+  position: absolute;
+  right:20px;
+  top: 920px;
+  /* height: 200px; */
+  width: 250px;
+}
+.E140{
+  position: absolute;
+  right:20px;
+  top: 1050px;
+  /* height: 200px; */
+  /* width: 250px; */
+}
+.E15{
+  position: absolute;
+  right:20px;
+  top: 1100px;
+  height: auto;
+  width: 250px;
+}
+
+.E150{
+  position: absolute;
+  right:20px;
+  top: 1230px;
+  height: auto;
+  /* width: 250px; */
+}
+
+.E16{
+  position: absolute;
+  right:20px;
+  top: 1930px;
+  height: auto;
+  width: 350px;
+}
+
+.E160{
+  position: absolute;
+  right:20px;
+  top: 2130px;
+  height: auto;
+  /* width: 350px; */
+}
+.iiii{
+  position: absolute;
+  top:3000px;
+  font-weight: bolder;
+  font-size: 18;
+  text-shadow: 10px 6px 5px lightblue;
+  font-family: Apple Chancery, cursive;
+  color: #1C2063;
+  padding-bottom: 30px;
+}
+div h8 a{
+  color: black;
+}

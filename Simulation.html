@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Simulation.css">
+<script src="Simulation.js"> </script>
+</head>
+<body>
+    <nav>
+        <label class="logo">Butterfly Effect</label>
+        <ul class="list">
+          <li> <a  href="About.html">About</a> </li>
+          <li> <a href="Analysis.html">Analysis</a> </li>
+           <li> <a class="active" href="Simulation.html">Simulation</a> </li>
+          <li> <a href="https://thingspeak.com/channels/1613328">Connect</a> </li>
+        </ul>
+     </nav>
+
+   <div class="input" method="get" onsubmit="event.preventDefault();">
+      <label> Calculate Restoring Force Fs=-kx </label>
+      <h4 id="hhh">Spring constant </h4>
+      <input  type="text" id="k" placeholder="Enter Value"/>
+      <h4> Spring delta X </h4>
+      <input  type="text" id="x"  placeholder="Enter Value"/>
+      <button  id="Restoring" />
+      <input class="equal"   onclick="calc()" value="="/>
+  </div>
+  <div>
+    <iframe class="Simulation" src="https://app.vectary.com/p/4Pzi4OTcdOmXwMVWmghv8G"
+    frameborder="0" width="100%" height="480"></iframe>
+  </a>
+</div>
+
+  <div class="input2" method="get" onsubmit="event.preventDefault();">
+     <label> Calculate Fnet(Net force) = F(t)-Fs </label>
+     <h4 id="hhh2">  Restoring Force </h4>
+     <input  type="text" id="B" placeholder="Enter Value"/>
+     <h4> F(t) The force the load exerts </h4>
+     <input  type="text" id="T" placeholder="Enter Value"/>
+     <button  id="Fnet"/>
+     <input class="equal" onclick="calc2()" value="="/>
+ </div>
+
+ <div  class="input3" method="get" onsubmit="event.preventDefault();">
+    <label> Calculate OutPut(gearing up factor)  </label>
+    <h4 id="hhh3"> No of teeth Gear 1 </h4>
+    <input  type="text" id="W" placeholder="Enter Value"/>
+    <h4> No of teeth Gear 2 </h4>
+    <input  type="text" id="Q"  placeholder="Enter Value"/>
+    <h4>  No of teeth Gear 3 </h4>
+    <input  type="text" id="A"  placeholder="Enter Value"/>
+    <h4>  No of teeth Gear 4 </h4>
+    <input  type="text" id="S"  placeholder="Enter Value"/>
+    <button  id="Angular"/>
+    <input class="equal" type= "submit" onclick="calc3();" value="="/>
+ </div>
+ <div  class="input4" method="get" onsubmit="event.preventDefault();">
+    <label>  Calculate Angular Accelartion Gear1</label>
+    <h4 id="hhh4"> Linear Acceleration </h4>
+    <input  type="text" id="D" placeholder="Enter Value"/>
+    <h4> Radius of the gear </h4>
+    <input  type="text" id="F"  placeholder="Enter Value"/>
+    <button  id="output"/>
+    <input class="equal" type= "submit" onclick="calc4();" value="="/>
+
+ </div>
+ <div  class="input5" method="get" onsubmit="event.preventDefault();">
+    <label>  Calculate Angular acceleration of gear 4</label>
+    <h4 id="hhh5"> Angular Accelartion Gear1 </h4>
+    <input  type="text" id="G" placeholder="Enter Value"/>
+    <h4> Gearing up factor </h4>
+    <input  type="text" id="H"  placeholder="Enter Value"/>
+    <button  id="acceleration"/>
+    <input class="equal" type= "submit" onclick="calc5();" value="="/>
+ </div>
+ <div  class="input6" method="get" onsubmit="event.preventDefault();">
+    <label>  Voltage output</label>
+    <h4 id="hhh6"> Input  time </h4>
+    <input  type="text" id="J" placeholder="Enter Value"/>
+    <h4> Maximum EMF of the generator </h4>
+    <input  type="text" id="L"  placeholder="Enter Value"/>
+    <h4> Angular acceleration of gear 4 </h4>
+    <input  type="text" id="N"  placeholder="Enter Value"/>
+    <button  id="voltage"/>
+    <input class="equal" type= "submit" onclick="calc6()" value="="/>
+ </div>
+ <div  class="input7" method="get" onsubmit="event.preventDefault();">
+    <label>  Current Output</label>
+    <h4 id="hhh7"> Generator Resistance </h4>
+    <input  type="text" id="Z" placeholder="Enter Value"/>
+    <h4> Voltage </h4>
+    <input  type="text" id="M" placeholder="Enter Value"/>
+    <button  id="current"/>
+    <input class="equal" type= "submit" onclick="calc7();" value="="/>
+ </div>
+ <div  class="input8" method="get" onsubmit="event.preventDefault();">
+   <label>  Power Output</label>
+   <h4 id="hhh7"> Current </h4>
+   <input  type="text" id="HH" placeholder="Enter Value"/>
+   <h4> Voltage </h4>
+   <input  type="text" id="HS" placeholder="Enter Value"/>
+   <button  id="Power"/>
+    <input class="equal" type= "submit" onclick="calc8();" value="="/>
+    <br>
+    <br>
+ </div>
+ <div class="iiii">
+ <h8 > <a href="https://thingspeak.com/channels/1613328">Go to Connect</a> </h8>
+</div>
+</body>
+</html>

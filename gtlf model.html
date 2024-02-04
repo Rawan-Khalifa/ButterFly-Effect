@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<script src="three.min.js"></script>
+		<script src="https://cdnjs.cloudflre.com/ajax/libs/three.js/102/three.js"> </script>
+
+		<style>
+			body { margin: 0; }
+			canvas{
+				display:block;
+              }
+		</style>
+	</head>
+	<body>
+		<script src="three.js"></script>
+		<script type="module" src="GLTFLoader.js"></script>
+
+		<script type="module">
+	    import {GLTFLoader}	from"./GLTFLoader.js";
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(
+				75, window.innerWidth/window.innerHight,.1, 1000
+			);
+			var renderer = new THREE.WebGLRenderer({antialias: true});
+			renderer.setSize(window.innerWidth, window.innerHight);
+			document.body.appendChild(renderer.domElement);
+			window.addEventListener('resize', () =>  {
+      renderer.setSize(window.innerWidth, window.innerHight);
+		  camera.aspect = window.innerWidth /	window.innerHight;
+			camera.updateProjectMatrix();
+			} )
+      var obj;
+			var loader = new GLTFLoader();
+			loader.load("Train.gltf", function(gltf) {
+				obj =gltf.scene;
+				scene,add(gltf.scene);
+			});
+			scene.background= new THREE.color(black);
+			var light = new THREE.HemisphereLight(0xFFFFFF, 0x000000, 2);
+      scene.add(light);
+			camera.position.set(10,30,100);
+			function animate() {
+				requestAnimationFrame(animate);
+				renderer.render(scene, camera);
+			}
+			animate();
+		</script>
+	</body>
+</html>

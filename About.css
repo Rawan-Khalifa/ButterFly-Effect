@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: border-box;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("abstract.jpg");
+  background-color: #A7CFE6;
+    background-size: cover;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+nav{
+ background-color: #102837;
+ /* #89cff0; */
+ display: flex;
+ border: 2px solid white ;
+ border-radius: 35px;
+  height: 80px;
+  width: 100%
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 180px;
+  font-weight: bold;
+}
+ul{
+  float:right;
+  margin-right: 40px;
+
+}
+ul li{
+  display:inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  background-color: #102837 ;
+  border: 2px solid white ;
+  border-radius: 25px;
+  color: white;
+  transition: 0.5
+}
+@media(max-width:768px){
+  .image-container{
+    opacity: 50%;
+
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(80px);
+  }
+    .list{
+      background-color: black;
+      text-align:center;
+      animation: list 2s ease-out;
+    }
+    body{
+      background-size: auto;
+    }
+
+@keyframes list {
+  0%{
+    opacity: 0;
+    right: -100px;
+  }
+  50%{
+  opacity 0;
+  transform: translateX(100px);
+}
+  100%{
+  opacity: 1;
+      }
+}
+
+}
+
+.frame {
+  width: 480px;
+  height: 450px;
+  border: 5px solid ;
+  border-color:  #0000;
+  border-radius: 25px;
+  /* opacity: .2; */
+  position: absolute;
+  margin-left: 10px;
+  top: 95px;
+  left: 30px;
+
+
+}
+h1,h2,h3 {
+  margin-top: 5px;
+
+  margin-left: 5px;
+  direction: ltr;
+  color: black;
+  opacity: 1;
+  font-family: "Georgia", Times, serif;
+  font-size: 20px;
+  word-spacing: 1px;
+}
+
+
+.railFirst-train {
+  /* display: flex; */
+  /* transform: translate(57rem,18.5rem); */
+  height: auto;
+  width: 500px;
+  position: absolute;
+  right: 0px;
+  bottom: 236px;
+}
+.railFirst-train2{
+  height: auto;
+  width: 500px;
+  position: absolute;
+  right: 408px;
+  bottom: 0px;
+}
+
+.trainelec {
+  position: absolute;
+  right: 1px;
+  bottom: 150px;
+  animation: SS 7s infinite linear;
+
+}
+.railtrainelec {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.First-train {
+  position: absolute;
+  right: 0px;
+  bottom:270px;
+  animation: LS 7s infinite linear;
+
+}
+.railthirdtrain{
+  position: absolute;
+  right: 1px;
+  bottom: 0px;
+
+}
+.Thirdtrain{
+  position: absolute;
+  animation: TS 7s infinite linear;
+
+}
+.railthirdtrainpart2{
+  position: absolute;
+  right: 400px;
+  bottom: 5px;
+
+}
+.railtrainelec2{
+  position: absolute;
+  right: 121px;
+  bottom: 0px;
+
+}
+/*
+.railthirdtrainpart22{
+  position: absolute;
+  right: 790px;
+  bottom: -10px;
+
+} */
+
+/* .image-container{
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+
+@keyframes LS{
+  0%{
+    right: -350px;
+    bottom:450px;
+    opacity: 1;
+
+  }
+
+  70%{
+    right:440px;
+    bottom:15px;
+
+
+  }
+
+  98%{
+      opacity: 0.9;
+  }
+
+  100%{
+     right:700px;
+    bottom:-150px;
+    opacity: 0;
+
+  }
+}
+
+@keyframes TS{
+  0%{
+    right:-190px;
+    bottom:195px;
+    opacity: 1;
+
+  }
+
+   65%{
+  right:170px;
+  bottom:0px;
+
+
+
+  }
+  99%{
+
+    opacity: 1;
+
+  }
+
+  100%{
+    right:370px;
+    bottom:-130px;
+    opacity: 0.25;
+
+  }
+}
+
+
+@keyframes SS{
+  0%{
+    right:-290px;
+    bottom:350px;
+    opacity: 1;
+
+  }
+
+  60%{
+    right:315px;
+    bottom:20px;
+    opacity: 1;
+
+  }
+  90%{
+    opacity: 1;
+
+  }
+
+  100%{
+    right:650px;
+    bottom:-190px;
+    opacity: 0.25;
+
+  }
+}
+div h8 a{
+  color: black;
+}
+
+.iiii{
+  position: absolute;
+  bottom:20px;
+  font-weight: bolder;
+  font-size: 18;
+  /* text-shadow: 10px 6px 5px lightblue; */
+  font-family: Apple Chancery, cursive;
+  color: #1C2063;
+  padding-bottom: 30px;
+}
