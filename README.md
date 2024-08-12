@@ -37,8 +37,7 @@ For detailed information about the project, including design, implementation, an
 
 You can explore the project further through the official website, which hosts the prototype simulation and additional insights:
 
-- [Project Website](https://butterfly-effect-stem.000webhostapp.com/About.html)
-- [Alternative Accessible Link](https://doaa-mahdy.github.io/Butterfly-Effect/About.html)
+- [Project Website](https://doaa-mahdy.github.io/Butterfly-Effect/About.html)
 
 ## Collaborators
 
