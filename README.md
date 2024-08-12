@@ -1,19 +1,20 @@
 # ButterFly-Effect
 
-**ButterFly-Effect** is an innovative project focused on modifying the railway system to convert mechanical energy into electrical energy. The prototype developed in this project successfully generated 22.59 milliwatts per train carriage, and with large-scale implementation, the project is capable of producing 8 megawatts of electricity per day.
+**ButterFly-Effect** is a comprehensive three-part project focused on modifying the railway system to convert mechanical energy into electrical energy. The project involves hardware design, Arduino integration, and a web interface for monitoring and analysis. The prototype developed in this project successfully generated 22.59 milliwatts per train carriage, and with large-scale implementation, the project is capable of producing 8 megawatts of electricity per day.
 
 ## Project Overview
 
 - **Energy Generation:** The core idea involves harnessing mechanical energy from train carriages and converting it into electrical energy. The prototype demonstrated a generation of 22.59 milliwatts per carriage, and calculations suggest that on a larger scale, the system could produce up to 8 megawatts of energy daily.
   
-- **Monitoring System:** The project integrates a comprehensive monitoring system using voltage and current sensors connected via NodeMCU. This system allows real-time tracking of energy generation.
-
-- **Web Interface:** The results from the monitoring system are displayed on a dedicated website, which includes a prototype simulation and detailed project analysis.
+- **Three-Part Project:** 
+  - **Hardware Design:** Focuses on the physical system that converts mechanical energy from train carriages into electrical energy.
+  - **Arduino Integration:** Utilizes Arduino and NodeMCU for real-time data collection, processing, and communication with voltage/current sensors.
+  - **Web Interface:** Displays the results of the monitoring system, including prototype simulation and detailed project analysis, on a dedicated website.
 
 ## Features
 
 - **Energy Conversion:** Efficiently converts mechanical energy from moving train carriages into electrical energy.
-- **Real-Time Monitoring:** Voltage and current sensors monitor the system, with data processed by NodeMCU.
+- **Real-Time Monitoring:** Voltage and current sensors monitor the system, with data processed by NodeMCU and Arduino.
 - **Web-Based Visualization:** 
   - **Prototype Simulation:** The website features an interactive simulation of the energy conversion process, providing users with a clear understanding of how mechanical energy is transformed into electrical energy.
   - **Live Data Display:** The website offers a real-time display of the energy generation metrics, showcasing data collected from the sensors, including voltage, current, and total energy generated.
@@ -23,7 +24,7 @@
 ## Technologies Used
 
 - **JavaScript:** Powers the interactive elements and data processing on the website.
-- **NodeMCU:** Used for real-time data processing and communication with voltage/current sensors.
+- **NodeMCU and Arduino:** Used for real-time data processing and communication with voltage/current sensors.
 - **Website:** Displays the monitoring system's data, prototype simulation, and project analysis.
 
 ## Project Documentation
@@ -50,4 +51,3 @@ This project was a collaborative effort, developed by:
 ---
 
 Thank you for exploring **ButterFly-Effect**! We hope this project inspires further innovation in sustainable energy solutions.
-
