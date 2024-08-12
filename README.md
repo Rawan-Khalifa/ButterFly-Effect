@@ -32,6 +32,7 @@
 For detailed information about the project, including design, implementation, and analysis, please refer to the full project documentation:
 
 - [Full Project Documentation](https://drive.google.com/file/d/14HQgVDuOYOLNm84y9cC-jNq3GoUQDpgU/view?usp=sharing)
+- [Project Pitch](https://docs.google.com/presentation/d/1BHYRoIwQnXqLrFQboqpUTc-H0nVtrrK6/edit?usp=sharing&ouid=105001438997669022865&rtpof=true&sd=true)
 
 ## Project Website
 
