@@ -46,7 +46,7 @@ This project was a collaborative effort, developed by:
 
 - **Doaa Mahdy**
 - **Menna Ramadan**
-- **Rawan Khalifa** - [GitHub Profile](https://github.com/Rawan-Khalifa/ButterFly-Effect)
+- **Rawan Khalifa** 
 
 ---
 
